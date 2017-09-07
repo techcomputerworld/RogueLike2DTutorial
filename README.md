@@ -18,3 +18,7 @@ La preparación del entorno mas que nada.
 ## 2. Creando los personajes 
 
 Se crea al jugador como Player, a Enemy1 y Enemy2 con sus animaciones.
+
+## 3. Creando mas prefabs
+
+Aqui hemos creado todos los objetos del juego en prefabs
