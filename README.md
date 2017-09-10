@@ -7,7 +7,8 @@
 # Descripción 
 
 Videojuego que simplemente lo desarrollare y es la versión que saldra del tutorial que haremos, lo voy poniendo en GIT por si ocurre algun desastre y no tener que volver a crear el juego.
-Si me llama la atención seguir mejorando el juego lo hare si no, también lo dire claramente por aqui y quien tenga interes en desarrollar algo del juego que lo haga. 
+Si me llama la atención seguir mejorando el juego lo hare si no, también lo dire claramente por aqui y quien tenga interes en desarrollar algo del juego que lo haga. El videojuego lo desarrollare 
+en Android y Windows, Linux y Mac OS X.
 
 ## Capitulos
 
@@ -21,4 +22,14 @@ Se crea al jugador como Player, a Enemy1 y Enemy2 con sus animaciones.
 
 ## 3. Creando mas prefabs
 
-Aqui hemos creado todos los objetos del juego en prefabs
+Aqui hemos creado todos los objetos del juego en prefabs.
+
+## 4. generando los niveles - 1 de 2 
+
+Aqui se crean los niveles usando dos for para generar el nivel, el suelo y los muros de fuera delimitando el nivel. 
+
+## 5. generando los niveles - 2 de 2 
+
+Aqui generamos los objetos dentro de los niveles del cuadrado 8x8, El jugador, los enemigos, muros dentro del cuadrado 8x8.
+
+
