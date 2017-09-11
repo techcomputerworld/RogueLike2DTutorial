@@ -36,4 +36,7 @@ Aqui generamos los objetos dentro de los niveles del cuadrado 8x8, El jugador, l
 
 aqui haremos una clase para mover los personajes, tanto el jugador como los enemigos una clase abstract
 
+## 7. muros destruibles 
+
+Aqui hacemos una clase que le ponemos a los prefabs de lois wall destruibles los que estan en medio dentro del juego en el cuadradod de 6x6.
 
