@@ -32,4 +32,8 @@ Aqui se crean los niveles usando dos for para generar el nivel, el suelo y los m
 
 Aqui generamos los objetos dentro de los niveles del cuadrado 8x8, El jugador, los enemigos, muros dentro del cuadrado 8x8.
 
+## 6. Movimiento de personajes 
+
+aqui haremos una clase para mover los personajes, tanto el jugador como los enemigos una clase abstract
+
 
