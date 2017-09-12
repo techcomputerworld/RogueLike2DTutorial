@@ -12,13 +12,13 @@ public abstract class MovingObject : MonoBehaviour {
     private BoxCollider2D boxCollider;
     private Rigidbody2D rb2D;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         boxCollider = GetComponent<BoxCollider2D>();
         rb2D = GetComponent<Rigidbody2D>();
     }
     // Use this for initialization
-    void Start () {
+    protected virtual void Start () {
         //la inversa de moveTime
         movementSpeed = 1f / moveTime;	
 	}

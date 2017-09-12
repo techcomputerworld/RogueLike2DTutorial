@@ -43,3 +43,7 @@ Aqui hacemos una clase que le ponemos a los prefabs de lois wall destruibles los
 ## 8. Animando al jugador
 
 Aqui desarrollamos las animaciones de playerChop y playerHit dentro del componente Animator.
+
+## 9. Programando al jugador 
+
+Programando un script para el movimiento del jugador teniendo en cuenta hacia donde se mueve si hay un muro, comida, bebida. 
