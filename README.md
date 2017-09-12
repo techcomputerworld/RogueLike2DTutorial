@@ -40,3 +40,6 @@ aqui haremos una clase para mover los personajes, tanto el jugador como los enem
 
 Aqui hacemos una clase que le ponemos a los prefabs de lois wall destruibles los que estan en medio dentro del juego en el cuadradod de 6x6.
 
+## 8. Animando al jugador
+
+Aqui desarrollamos las animaciones de playerChop y playerHit dentro del componente Animator.
