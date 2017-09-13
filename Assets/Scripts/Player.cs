@@ -93,4 +93,26 @@ public class Player : MovingObject {
         checkIfGameOver();
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Exit"))
+        {
+            Invoke("Restart", restartLevelDelay);
+            enabled = false;
+        }
+        else if (other.CompareTag("Food"))
+        {
+            food += pointsPerFood;
+            // no lo destruye y no hace trabajar al recolector de basura simplemente desactiva el objeto 
+            other.gameObject.SetActive(false);
+
+        }
+        else if (other.CompareTag("Soda"))
+        {
+            food += pointsPerSoda;
+            other.gameObject.SetActive(false);
+        }
+
+    }
+
 }

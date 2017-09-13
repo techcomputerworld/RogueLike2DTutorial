@@ -47,3 +47,8 @@ Aqui desarrollamos las animaciones de playerChop y playerHit dentro del componen
 ## 9. Programando al jugador 
 
 Programando un script para el movimiento del jugador teniendo en cuenta hacia donde se mueve si hay un muro, comida, bebida. 
+
+## 10. Programando a los enemigos 
+
+Programando el script de movimiento y de ataque de los enemigos hacia el jugador y se movera con respecto a los movimiento del jugador. 
+
