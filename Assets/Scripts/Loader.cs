@@ -2,15 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Loader : MonoBehaviour {
+namespace Rogue
+{
 
-    public GameObject gameManager;
+    public class Loader : MonoBehaviour {
+
+        public GameObject gameManager;
 	
-    private void Awake()
-    {
-        if (GameManager.Instance == null)
+        private void Awake()
         {
-            Instantiate(gameManager);
+            if (GameManager.Instance == null)
+            {
+                Instantiate(gameManager);
+            }
         }
     }
 }

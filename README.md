@@ -52,3 +52,27 @@ Programando un script para el movimiento del jugador teniendo en cuenta hacia do
 
 Programando el script de movimiento y de ataque de los enemigos hacia el jugador y se movera con respecto a los movimiento del jugador. 
 
+## 11. Animando a los enemigos
+
+Programando la animacion de los enemigos. 
+
+## 12. Interfaz de usuario  
+
+Poniendo un canvas y mostrando la comida de nuestro personaje, que es en realidad sus puntos de vida, sumando tambien cuando coge soda o comida. 
+
+# Problemas con el codigo 
+
+Uno de los problemas que me ha dado el codigo y por eso he comprimido los ficheros que esta en Assets\_Complete-Game\scripts en un fichero .rar, por qué me estaba dando problemas el propio codigo del tutorial,
+Por eso he comprimido los archivos y los he metido en un archivo para que no puedan leer de ahí nada me estabadando errores el juego por ese motivo con GameManager algo que no entiendo por eso he quitado el codigo
+de ahí.
+
+De momento no tiene errores el juego funciona perfectamente. Creo que con este codigo se podria desarrollar perfectamente un juego, estilo Heroquest programando mucho y trabajandolo da para mucho juego este codigo.
+Por tanto quien se anime a hacer algo que se ponga en contacto conmigo. 
+
+# Desarrollo de videojuegos 
+
+Es una profesión que me ha llamado desde siempre, quien tenga interes como yo en aprender puede perfectamente contribuir conmigo en esa misión de aprender y trabajar para conseguir desarrollar un videojuego tengo algunas ideas de videojuegos para desarrollar. 
+
+Ahora mismo ando viendo videotutoriales y aprendiendo poco a poco, desarrollar videojuegos es apasionante si te gustan mucho los videojuegos y una profesión con futuro imagimo como otros desarrollos de software.
+
+Este videojuego se me ha ocurrido usarlo como base para crear otro videojuego, del estilo de juegos de mesa como Heroquest.
