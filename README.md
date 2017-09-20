@@ -60,6 +60,10 @@ Programando la animacion de los enemigos.
 
 Poniendo un canvas y mostrando la comida de nuestro personaje, que es en realidad sus puntos de vida, sumando tambien cuando coge soda o comida. 
 
+## 13. Musica y sonidos
+
+Hemos puesto musica y tambien todos los sonidos que nos han hecho falta en el juego. 
+
 # Problemas con el codigo 
 
 Uno de los problemas que me ha dado el codigo y por eso he comprimido los ficheros que esta en Assets\_Complete-Game\scripts en un fichero .rar, por qué me estaba dando problemas el propio codigo del tutorial,

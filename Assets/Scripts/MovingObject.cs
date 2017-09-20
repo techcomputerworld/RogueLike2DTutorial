@@ -69,12 +69,16 @@ namespace Rogue
         //este metodo es abstracto lo implementaremos en las clases que hereden de MovingObject
         protected abstract void OnCantMove(GameObject go);
         // vamos a realizar este metodo sin usar un metodo generico
-        protected virtual void AttemptMove(int xDir, int yDir)
+        protected virtual bool AttemptMove(int xDir, int yDir)
         {
             RaycastHit2D hit;
             bool canMove = Move(xDir, yDir, out hit);
-            if (canMove) return;
-            OnCantMove(hit.transform.gameObject);
+            if (!canMove)
+            {
+                OnCantMove(hit.transform.gameObject);
+            }
+            //retorna la variable verdadero o falso si se ha podido mover o no se ha podido mover
+            return canMove;
 
         }
     }

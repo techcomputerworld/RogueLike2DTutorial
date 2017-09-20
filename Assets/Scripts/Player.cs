@@ -9,6 +9,7 @@ namespace Rogue
 {
     public class Player : MovingObject
     {
+        public AudioClip moveSound1, moveSound2, eatSound1, eatSound2, drinkSound1, drinkSound2, gameOverSound;
 
         public int wallDamage = 1;
         public int pointsPerFood = 10;
@@ -44,28 +45,34 @@ namespace Rogue
         private void checkIfGameOver()
         {
             if (food <= 0)
+            {
+                SoundManager.instance.PlaySingle(gameOverSound);
                 GameManager.Instance.GameOver();
+            }
+                
         }
 
         //crearemos parametros para los otros metodos 
         
         private void FoodPoints(int food)
         {
+            
             foodText.text = "Food: " + food;
-
         }
         
-        protected override void AttemptMove(int xDir, int yDir)
+        protected override bool AttemptMove(int xDir, int yDir)
         {
             //la comida se decrementa su valor en 1, cada movimiento decrementa su valor
             food--;
             FoodPoints(food);
             //foodText.text = "Food: " + food;
-            base.AttemptMove(xDir, yDir);
+            bool canMove = base.AttemptMove(xDir, yDir);
+            if (canMove)
+                SoundManager.instance.RandomizeSfx(moveSound1, moveSound2);
             //cada vez que se decrementa el valoe food tenemos que comprobar que no esta en 0 su valor, si esta a 0 se activara gameOver()
             checkIfGameOver();
             GameManager.Instance.playerTurn = false;
-
+            return canMove;
         }
 
         private void Update()
@@ -83,7 +90,11 @@ namespace Rogue
             if (horizontal != 0)
                 vertical = 0;
             if (horizontal != 0 || vertical != 0)
-                AttemptMove(horizontal, vertical);
+            {
+                bool canMove = AttemptMove(horizontal, vertical);
+                
+            }
+               
         }
 
         protected override void OnCantMove(GameObject go)
@@ -119,7 +130,9 @@ namespace Rogue
             }
             else if (other.CompareTag("Food"))
             {
+
                 food += pointsPerFood;
+                SoundManager.instance.RandomizeSfx(eatSound1, eatSound2);
                 foodText.text = "+ " + pointsPerFood + " Food: " + food;
                 // no lo destruye y no hace trabajar al recolector de basura simplemente desactiva el objeto 
                 other.gameObject.SetActive(false);
@@ -128,6 +141,7 @@ namespace Rogue
             else if (other.CompareTag("Soda"))
             {
                 food += pointsPerSoda;
+                SoundManager.instance.RandomizeSfx(drinkSound1, drinkSound2);
                 foodText.text = "+ " + pointsPerSoda + " Food: " + food;
                 other.gameObject.SetActive(false);
             }

@@ -7,7 +7,7 @@ namespace Rogue
 {
     public class Enemy : MovingObject
     {
-
+        public AudioClip enemyAttack1, enemyAttack2;
         public int playerDamage;
 
         private Animator animator;
@@ -38,15 +38,17 @@ namespace Rogue
 
         }
         // metodo que prueba a mover al enemigo hacia una direccion 
-        protected override void AttemptMove(int xDir, int yDir)
+        protected override bool AttemptMove(int xDir, int yDir)
         {
+            //solo estamos devolviendo el valor porque el metodo es bool pero no porque lo necesitemos el metodo base. 
             if (skipMove)
             {
                 skipMove = false;
-                return;
+                return false;
             }
-            base.AttemptMove(xDir, yDir);
+            bool canMove = base.AttemptMove(xDir, yDir);
             skipMove = true;
+            return canMove;
         }
 
         public void MoveEnemy()
@@ -74,6 +76,7 @@ namespace Rogue
             {
                 hitPlayer.LoseFood(playerDamage);
                 animator.SetTrigger("enemyAttack");
+                SoundManager.instance.RandomizeSfx(enemyAttack1, enemyAttack2);
             }
             /* aqui voy a poner en otra version del videojuego, que si es un wall con lo que me topo, no le hara da�o, pero se movera a otro sitio mas interesante 
              * en contra del jugador.
