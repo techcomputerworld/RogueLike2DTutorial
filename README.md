@@ -64,6 +64,14 @@ Poniendo un canvas y mostrando la comida de nuestro personaje, que es en realida
 
 Hemos puesto musica y tambien todos los sonidos que nos han hecho falta en el juego. 
 
+## 14. Control Tactil 
+
+Se crea un control tactil, para tocar la pantalla y vaya en direccion a donde el dedo vaya, tengo que probarlo en mi smartphone, de todas maneras dejare subido el juego en su version de Smartphone para que, quien quiera probarlo lo pruebe.
+
+# Versiones del videojuego
+
+version 0.1 Alphha: Tal cual el juego esta programado ahora mismo, se puede mejorar mucho o usarlo como base para otros juegos de este estilo asi por turnos incluso en tiempo real, ya es cuestión de echar imaginación y desarrollar algo bien hecho. 
+
 # Problemas con el codigo 
 
 Uno de los problemas que me ha dado el codigo y por eso he comprimido los ficheros que esta en Assets\_Complete-Game\scripts en un fichero .rar, por qué me estaba dando problemas el propio codigo del tutorial,
